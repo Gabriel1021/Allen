@@ -1,0 +1,6 @@
+com\gabriel\utils\CommonTest.class
+com\gabriel\Test01Application.class
+com\gabriel\service\impl\Service2.class
+com\gabriel\controller\HelloController.class
+com\gabriel\service\IService.class
+com\gabriel\service\impl\Service1.class
