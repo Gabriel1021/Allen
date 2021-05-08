@@ -32,7 +32,8 @@ public class ServiceTest {
     service1.executing();
   }
 
+  @Test
   public void tr(){
-
+    helpCategoryService.test();
   }
 }

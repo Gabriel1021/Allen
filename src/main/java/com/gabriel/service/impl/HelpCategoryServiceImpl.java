@@ -18,6 +18,6 @@ import org.springframework.stereotype.Service;
 public class HelpCategoryServiceImpl extends ServiceImpl<HelpCategoryMapper, HelpCategory> implements IHelpCategoryService {
 
   public void test(){
-    System.out.println(this.getBaseMapper().selectByMap(null));
+    System.err.println(this.getBaseMapper().selectByMap(null));
   }
 }
