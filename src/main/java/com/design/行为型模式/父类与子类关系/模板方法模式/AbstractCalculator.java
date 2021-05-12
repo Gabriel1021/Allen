@@ -5,8 +5,6 @@ package com.design.行为型模式.父类与子类关系.模板方法模式;
  * 在AbstractCalculator类中定义一个主方法calculate，calculate()调用spilt()
  * 等，Plus继承AbstractCalculator类，通过对AbstractCalculator的调用实现对子类的调用
  *
- *
- * 作者: zhoubang 日期：2015年10月28日 下午4:44:10
  */
 public abstract class AbstractCalculator {
 

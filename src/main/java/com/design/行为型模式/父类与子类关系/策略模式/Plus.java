@@ -4,7 +4,6 @@ package com.design.行为型模式.父类与子类关系.策略模式;
 /**
  * 数值相加
  *
- * 作者: zhoubang 日期：2015年10月28日 下午4:21:40
  */
 public class Plus extends AbstractCalculator implements ICalculator {
 

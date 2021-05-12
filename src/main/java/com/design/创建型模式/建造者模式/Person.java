@@ -3,7 +3,6 @@ package com.design.创建型模式.建造者模式;
 /**
  * 共同部分，声明为对象
  *
- * 作者: zhoubang 日期：2015年10月27日 下午4:34:29
  */
 public class Person {
 

@@ -3,7 +3,6 @@ package com.design.结构型模式.外观模式;
 /**
  * 拥有其他所有部件，统一管理，实现解耦
  *
- * 作者: zhoubang 日期：2015年10月28日 下午2:10:53
  */
 public class Computer {
 

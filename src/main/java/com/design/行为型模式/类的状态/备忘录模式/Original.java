@@ -3,7 +3,6 @@ package com.design.行为型模式.类的状态.备忘录模式;
 /**
  * 原始类，里面有需要保存的属性value及创建一个备忘录类，用来保存value值
  *
- * 作者: zhoubang 日期：2015年10月29日 上午9:36:59
  */
 public class Original {
 

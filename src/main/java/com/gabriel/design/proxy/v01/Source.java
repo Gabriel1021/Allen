@@ -7,11 +7,11 @@ import java.util.Random;
  * @description :
  * @date : 2021.05.10 13:05
  */
-public class Pig implements Animal {
+public class Source implements SourceAble {
 
   @Override
-  public void bark() {
-    System.out.println("嗷嗷、哼哼、哼唧、呼噜、呼噜噜");
+  public void method() {
+    System.out.println("程序员找bug调试:palapalapala(键盘声)");
     try {
       Thread.sleep(new Random().nextInt(10000));
     } catch (InterruptedException e) {

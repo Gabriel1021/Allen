@@ -6,7 +6,6 @@ package com.design.创建型模式.原型模式;
 /**
  * 实现一个克隆自身的操作
  *
- * 作者: zhoubang 日期：2015年10月27日 下午3:58:51
  */
 public class ConcretePrototype_浅复制 extends Prototype_浅复制 {
 

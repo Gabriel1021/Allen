@@ -10,7 +10,6 @@ import java.io.Serializable;
 /**
  * 声明一个克隆自身的接口————深复制
  *
- * 作者: zhoubang 日期：2015年10月27日 下午3:55:01
  */
 public class Prototype_深复制 implements Cloneable, Serializable {
 
@@ -62,7 +61,6 @@ public class Prototype_深复制 implements Cloneable, Serializable {
 /**
  * 声明内部类，方便测试使用
  *
- * 作者: zhoubang 日期：2015年10月27日 下午4:21:40
  */
 class SerializableObject implements Serializable {
 

@@ -3,7 +3,6 @@ package com.design.创建型模式.工厂方法模式.简单工厂模式.普通�
 /**
  * 发送邮件，实现Sender接口
  *
- * 作者: zhoubang 日期：2015年10月26日 下午4:45:36
  */
 public class MailSender implements Sender {
 

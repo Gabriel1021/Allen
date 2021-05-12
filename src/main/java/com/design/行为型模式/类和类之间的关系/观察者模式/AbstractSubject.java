@@ -10,7 +10,6 @@ public abstract class AbstractSubject implements Subject {
   /**
    * 添加观察者
    *
-   * 作者: zhoubang 日期：2015年10月28日 下午5:08:39
    *
    * @param observer (non-Javadoc)
    * @see com.zb.行为型模式.类和类之间的关系.观察者模式.Subject#add(com.zb.行为型模式.类和类之间的关系.观察者模式.Observer)
@@ -24,7 +23,6 @@ public abstract class AbstractSubject implements Subject {
   /**
    * 删除观察者
    *
-   * 作者: zhoubang 日期：2015年10月28日 下午5:08:47
    *
    * @param observer (non-Javadoc)
    * @see com.zb.行为型模式.类和类之间的关系.观察者模式.Subject#del(com.zb.行为型模式.类和类之间的关系.观察者模式.Observer)
@@ -37,7 +35,6 @@ public abstract class AbstractSubject implements Subject {
   /**
    * 通知观察者
    *
-   * 作者: zhoubang 日期：2015年10月28日 下午5:08:58 (non-Javadoc)
    *
    * @see com.zb.行为型模式.类和类之间的关系.观察者模式.Subject#notifyObservers()
    */

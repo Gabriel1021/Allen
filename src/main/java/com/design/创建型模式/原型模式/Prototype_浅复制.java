@@ -4,8 +4,6 @@ package com.design.创建型模式.原型模式;
 
 /**
  * 声明一个克隆自身的接口————浅复制
- *
- * 作者: zhoubang 日期：2015年10月27日 下午3:55:01
  */
 public class Prototype_浅复制 implements Cloneable {
 

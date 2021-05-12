@@ -5,7 +5,6 @@ import java.io.IOException;
 /**
  * 测试
  *
- * 作者: zhoubang 日期：2015年10月27日 下午3:59:36
  */
 public class Test {
 

@@ -4,8 +4,6 @@ public class ConcurrentWebSite extends WebSite {
 
   /**
    * 公共的部分，交给父类
-   *
-   * 作者: zhoubang 日期：2015年10月28日 下午3:39:09
    */
   public ConcurrentWebSite(String type) {
     super(type);
@@ -15,7 +13,6 @@ public class ConcurrentWebSite extends WebSite {
   /**
    * 不同的部分
    *
-   * 作者: zhoubang 日期：2015年10月28日 下午3:39:26
    *
    * @param user (non-Javadoc)
    * @see com.zb.结构型模式.享元模式.WebSite#use(com.zb.结构型模式.享元模式.User)

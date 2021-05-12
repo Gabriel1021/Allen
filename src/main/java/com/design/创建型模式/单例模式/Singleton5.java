@@ -10,7 +10,6 @@ public class Singleton5 {
   /**
    * 单独为创建对象方法加上synchronized关键字
    *
-   * 作者: zhoubang 日期：2015年10月27日 上午11:24:08snowflake
    */
   private static synchronized void syncInit() {
     if (instance == null) {
@@ -21,7 +20,6 @@ public class Singleton5 {
   /**
    * 获取实例对象的方法 与 创建实例对象的方法分开
    *
-   * 作者: zhoubang 日期：2015年10月27日 上午11:24:30
    */
   public static Singleton5 getInstance() {
     if (instance == null) {

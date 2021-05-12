@@ -1,8 +1,5 @@
 package com.design.创建型模式.工厂方法模式.简单工厂模式.多个工厂方法模式;
 
-/**
- * 作者: zhoubang 日期：2015年10月26日 下午4:50:49
- */
 public class Test {
 
   public static void main(String[] args) {

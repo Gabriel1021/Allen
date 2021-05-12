@@ -5,10 +5,7 @@ package com.gabriel.design.proxy.v01;
  * @description :
  * @date : 2021.05.10 13:02
  */
-public interface Animal {
+public interface SourceAble {
 
-  /**
-   * 叫声
-   */
-  void bark();
+  void method();
 }

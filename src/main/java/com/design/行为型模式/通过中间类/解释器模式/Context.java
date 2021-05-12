@@ -3,7 +3,6 @@ package com.design.行为型模式.通过中间类.解释器模式;
 /**
  * 上下文环境类
  *
- * 作者: zhoubang 日期：2015年10月29日 上午10:11:42
  */
 public class Context {
 

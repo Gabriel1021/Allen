@@ -3,7 +3,6 @@ package com.design.结构型模式.适配器模式.类的适配器模式;
 /**
  * 目标接口
  *
- * 作者: zhoubang 日期：2015年10月27日 下午5:03:48
  */
 public interface Targetable {
 

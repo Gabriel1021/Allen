@@ -17,7 +17,6 @@ public class Singleton6 {
   /**
    * 单独为创建对象方法加上synchronized关键字
    *
-   * 作者: zhoubang 日期：2015年10月27日 上午11:24:08
    */
   private static synchronized void syncInit() {
     if (instance == null) {
