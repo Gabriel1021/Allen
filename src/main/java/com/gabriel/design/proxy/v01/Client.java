@@ -1,6 +1,6 @@
 package com.gabriel.design.proxy.v01;
 
-public class Test {
+public class Client {
 
   public static void main(String[] args) {
     Source source = new Source();

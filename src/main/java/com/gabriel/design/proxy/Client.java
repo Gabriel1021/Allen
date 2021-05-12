@@ -1,6 +1,6 @@
 package com.gabriel.design.proxy;
 
-public class Test {
+public class Client {
 
   public static void main(String[] args) {
 

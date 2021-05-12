@@ -18,7 +18,7 @@ import org.springframework.test.context.junit4.SpringRunner;
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = Test01Application.class)
-public class ServiceTest {
+public class ServiceClient {
 
   @Autowired
   @Qualifier("Service1")
