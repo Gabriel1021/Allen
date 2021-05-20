@@ -19,4 +19,78 @@ public class Source implements SourceAble {
     }
   }
 
+
+  public static void main(String[] args) {
+    Source source = new Source();
+    SourceAble logProxy =new LogProxy(source);
+    SourceAble timeProxy =new TimeProxy(logProxy);
+    timeProxy.method();
+  }
+}
+class LogProxy implements SourceAble {
+
+  private SourceAble sourceAble;
+
+  public LogProxy(SourceAble sourceAble){
+    this.sourceAble = sourceAble;
+  }
+
+  public LogProxy(){
+  }
+
+  @Override
+  public void method() {
+    before();
+
+    sourceAble.method();
+
+    atfer();
+  }
+
+
+
+  private void before() {
+    System.out.println("执行方法之前的日志");
+  }
+
+  private void atfer() {
+    System.out.println("执行方法之后的日志");
+  }
+
+
+}
+
+
+class TimeProxy implements SourceAble {
+
+  private SourceAble sourceAble;
+
+  public TimeProxy(SourceAble sourceAble){
+    this.sourceAble = sourceAble;
+  }
+
+  public TimeProxy(){
+  }
+
+  @Override
+  public void method() {
+    before();
+
+    sourceAble.method();
+
+    atfer();
+  }
+
+  private void before() {
+    System.out.println("性能压力测试");
+  }
+
+  private void atfer() {
+    System.out.println("计算性能压力测试时间");
+  }
+}
+
+interface SourceAble {
+
+  void method();
 }
