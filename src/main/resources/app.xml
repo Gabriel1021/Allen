@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-4.2.xsd">
+
+
+
+    <bean id="source" class="com.gabriel.design.proxy.spring.v1.Source"/>
+    <bean id="timeProxy" class="com.gabriel.design.proxy.spring.v1.TimeProxy"/>
+
+    <aop:config>
+        <aop:aspect id="time" ref="timeProxy">
+            <aop:pointcut id="onMethod" expression="execution(void com.gabriel.design.proxy.spring.v1.Source.method())"/>
+            <aop:before method="before" pointcut-ref="onMethod"/>
+            <aop:after method="after" pointcut-ref="onMethod"/>
+        </aop:aspect>
+    </aop:config>
+
+</beans>
