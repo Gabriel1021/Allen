@@ -48,11 +48,11 @@ class LogProxy implements SourceAble {
 
 
   private void before() {
-    System.out.println("执行方法之前的日志");
+    System.out.println("执行方法之前的日志: ****************");
   }
 
   private void atfer() {
-    System.out.println("执行方法之后的日志");
+    System.out.println("执行方法之后的日志: $$$$$$$$$$$$$$$$$");
   }
 
 
@@ -72,19 +72,20 @@ class TimeProxy implements SourceAble {
 
   @Override
   public void method() {
+    long startTime = System.currentTimeMillis();
     before();
 
     sourceAble.method();
 
-    atfer();
+    atfer(startTime);
   }
 
   private void before() {
-    System.out.println("性能压力测试");
+    System.out.println("性能压力测试开始~~");
   }
 
-  private void atfer() {
-    System.out.println("计算性能压力测试时间");
+  private void atfer(long m) {
+    System.out.println("计算性能压力测试时间：" + (System.currentTimeMillis() - m));
   }
 }
 

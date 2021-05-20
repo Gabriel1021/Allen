@@ -1,11 +1,9 @@
 package com.gabriel.design.proxy.v02;
 
-import com.gabriel.service.Tank;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 import java.util.Random;
-import org.springframework.aop.framework.ProxyFactory;
 
 /**
  * @author : zouxiaoxiang
@@ -65,7 +63,7 @@ class LogHandler implements InvocationHandler {
   public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
     before(method.getName());
     Object o = method.invoke(sourceAble, args);
-    after(method.getName());
+    after( method.getName());
     return o;
   }
 }
