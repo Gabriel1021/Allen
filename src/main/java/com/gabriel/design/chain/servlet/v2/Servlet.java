@@ -6,7 +6,7 @@ import java.util.List;
 public class Servlet {
     public static void main(String[] args) {
         Request request = new Request();
-        request.str = "大家好:)，<script>，欢迎访问 xxx.com ，大家都是996 ";
+        request.str = "大家好:)，<script>，欢迎访问 xxx.com ，大家都是江西人 ";
         Response response = new Response();
         response.str = "response";
 
@@ -43,7 +43,7 @@ class Response {
 class SensitiveFilter implements Filter {
     @Override
     public boolean doFilter(Request request, Response response) {
-        request.str = request.str.replaceAll("996", "955");
+        request.str = request.str.replaceAll("江西人", "正邦人");
         response.str += "--SensitiveFilter()";
         return true;
     }

@@ -52,11 +52,11 @@ class LogHandler implements InvocationHandler {
 
 
   private void before(String methodName) {
-    System.out.println("JDK代理~~"+"method " + methodName + " start..");
+    System.out.println("JDK代理~~"+"方法名称 " + methodName + " start..");
   }
 
   private void after(String methodName) {
-    System.out.println("JDK代理~~"+"method " + methodName + " end!");
+    System.out.println("JDK代理~~"+"方法名称 " + methodName + " end!");
   }
 
   @Override
