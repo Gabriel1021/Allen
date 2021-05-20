@@ -26,10 +26,10 @@ public class LogProxy implements SourceAble {
   }
 
   private void before() {
-    System.out.println("执行方法之前的日志");
+    System.out.println("执行方法之前的日志: ****************");
   }
 
   private void atfer() {
-    System.out.println("执行方法之后的日志");
+    System.out.println("执行方法之后的日志: $$$$$$$$$$$$$$$$$");
   }
 }

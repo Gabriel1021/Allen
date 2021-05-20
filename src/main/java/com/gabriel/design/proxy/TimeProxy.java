@@ -18,21 +18,23 @@ public class TimeProxy implements  SourceAble{
 
   @Override
   public void method() {
+
+    long startTime = System.currentTimeMillis();
     before();
 
     source.method();
 
-    atfer();
+    atfer(startTime);
   }
 
 
 
   private void before() {
-    System.out.println("性能压力测试");
+    System.out.println("性能压力测试开始~~");
   }
 
-  private void atfer() {
-    System.out.println("计算性能压力测试时间");
+  private void atfer(long m) {
+    System.out.println("计算性能压力测试时间：" + (System.currentTimeMillis() - m));
   }
 
 

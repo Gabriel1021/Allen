@@ -19,7 +19,6 @@ public class Source implements SourceAble {
     }
   }
 
-
   public static void main(String[] args) {
     Source source = new Source();
     SourceAble logProxy =new LogProxy(source);
@@ -46,7 +45,6 @@ class LogProxy implements SourceAble {
 
     atfer();
   }
-
 
 
   private void before() {
