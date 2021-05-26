@@ -17,6 +17,7 @@ public class Client {
 
   public static void main(String[] args) {
 
+    // 代理类class文件存入本地磁盘方便我们反编译查看源码
     System.setProperty(DebuggingClassWriter.DEBUG_LOCATION_PROPERTY, "G:\\Code\\github");
     //1. 创建一个工具类
     Enhancer enhancer = new Enhancer();
